@@ -9,7 +9,7 @@ export default function Home() {
       <header className="hero">
         <div className="hero-text">
           <p className="eyebrow">Practice launch</p>
-          <h1>Hi, I’m Your Name</h1>
+          <h1>Hi, I’m Ana</h1>
           <p className="lead">
             This tiny Next.js app is about to go live on the internet with GitHub and Vercel.
           </p>
