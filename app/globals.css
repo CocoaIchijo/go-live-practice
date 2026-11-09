@@ -1,0 +1,160 @@
+/* Practice app styles for the "Go live" Next.js lab */
+
+:root {
+  --ink: #000000;
+  --white: #ffffff;
+  --soft: #f3f3f3;
+  --blue: #0070d1;
+  --blue-dark: #0064b7;
+  --blue-light: #53b1ff;
+  --body-dark: rgba(255, 255, 255, 0.7);
+  --body-light: rgba(0, 0, 0, 0.6);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--ink);
+  background: var(--white);
+}
+
+/* main grows so the footer sits at the bottom on short pages */
+main {
+  flex: 1;
+}
+
+h1,
+h2 {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+/* Hero: a dark band with text on the left and the rocket on the right */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 48px;
+  padding: 96px 48px;
+  background: var(--ink);
+  color: var(--white);
+}
+
+.hero-text {
+  max-width: 560px;
+}
+
+.eyebrow {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--blue-light);
+}
+
+.eyebrow-dark {
+  color: var(--blue-dark);
+}
+
+.hero h1 {
+  font-size: 54px;
+  margin: 12px 0 16px;
+}
+
+.lead {
+  color: var(--body-dark);
+  margin-bottom: 32px;
+}
+
+.button {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 9999px;
+  background: var(--blue);
+  color: var(--white);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+}
+
+/* Sections are separated by background colour, not by borders */
+.band {
+  padding: 72px 48px;
+}
+
+.band h2 {
+  font-size: 36px;
+  margin: 8px 0 16px;
+}
+
+.band p,
+.facts {
+  max-width: 620px;
+  color: var(--body-light);
+}
+
+.band-light {
+  background: var(--white);
+}
+
+.band-soft {
+  background: var(--soft);
+}
+
+.facts {
+  padding-left: 20px;
+}
+
+.facts li + li {
+  margin-top: 8px;
+}
+
+.back {
+  margin-top: 24px;
+}
+
+.back a {
+  color: var(--blue-dark);
+  font-weight: 700;
+}
+
+.band-blue {
+  padding: 48px;
+  background: var(--blue);
+}
+
+.band-blue p {
+  color: var(--white);
+}
+
+/* Phones: stack the hero */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 64px 24px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .band {
+    padding: 48px 24px;
+  }
+}
